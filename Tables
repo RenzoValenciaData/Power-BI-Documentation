@@ -1,0 +1,6 @@
+EVALUATE VAR _tablas = SELECTCOLUMNS(
+    INFO.TABLES(),
+    "ID-Tabla", [ID],
+    "Tabla", [Name]
+)
+RETURN _tablas
