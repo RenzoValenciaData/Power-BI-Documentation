@@ -1,0 +1,7 @@
+EVALUATE VAR _medidas = SELECTCOLUMNS(
+    INFO.MEASURES(),
+    "Medida", [Name],
+    "Fórmula DAX", [Expression],
+    "ID-Tabla", [TableID]
+)
+RETURN _medidas
