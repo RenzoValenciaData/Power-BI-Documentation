@@ -1,0 +1,11 @@
+DIM_CALENDAR = 
+VAR MinDate = MIN(v_fct_pnl_SAC_MEC[date])
+VAR MaxDate = MAX(v_fct_pnl_SAC_MEC[date])
+RETURN
+ADDCOLUMNS(
+    CALENDAR(MinDate,MaxDate),
+    "Year#",YEAR([Date]),
+    "Year",FORMAT([Date],"YYYY"),
+    "Month#",MONTH([Date]),
+    "Month",FORMAT([Date],"MMM")
+)
